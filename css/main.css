@@ -1,5 +1,3 @@
-
-
 :root {
    --oscuro: #090D0B;
    --blanco: #F2F2F2;
@@ -16,9 +14,9 @@
 
 
 body {
-    font-family: "Inter";
-    background-color: var(--oscuro);
-    color: var(--blanco);
+   font-family: "Inter";
+   background-color: var(--oscuro);
+   color: var(--blanco);
 }
 
 
@@ -285,10 +283,13 @@ img {
 }
 
 
-.paso span {
+
+/* Número identificador de cada habilidad */
+.paso>span {
    color: var(--gris);
    font-size: 12px;
 }
+
 
 
 .paso h3 {
@@ -350,9 +351,14 @@ img {
 /* footer*/
 
 
+
+/* Pie de página */
 .footer {
+   background-color: var(--oscuro);
+   color: var(--blanco);
    padding: 40px 0;
 }
+
 
 
 .footer .contenedor {
@@ -378,34 +384,34 @@ img {
 
 
    .portada {
-       padding: 100px 0;
+      padding: 100px 0;
    }
 
 
    .portada h1 {
-       font-size: 48px;
+      font-size: 48px;
    }
 
 
    .sobre-mi-contenido {
-       gap: 30px;
+      gap: 30px;
    }
 
 
    .proyectos h2,
    .proceso h2,
    .contacto h2 {
-       font-size: 40px;
+      font-size: 40px;
    }
 
 
    .pasos {
-       grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
    }
 
 
    .contacto-contenido {
-       gap: 25px;
+      gap: 25px;
    }
 }
 
@@ -419,25 +425,25 @@ img {
 
 
    .header .contenedor {
-       flex-direction: column;
-       align-items: flex-start;
-       gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
    }
 
 
    .menu {
-       flex-wrap: wrap;
-       gap: 15px;
+      flex-wrap: wrap;
+      gap: 15px;
    }
 
 
    .portada {
-       padding: 90px 0;
+      padding: 90px 0;
    }
 
 
    .portada h1 {
-       font-size: 40px;
+      font-size: 40px;
    }
 
 
@@ -445,8 +451,8 @@ img {
    .encabezado-proyectos,
    .proyecto-info,
    .contacto-contenido {
-       flex-direction: column;
-       align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
    }
 
 
@@ -454,40 +460,40 @@ img {
    .proyectos,
    .proceso,
    .contacto {
-       padding: 60px 0;
+      padding: 60px 0;
    }
 
 
    .sobre-mi-contenido {
-       grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
    }
 
 
    .sobre-mi-texto h2 {
-       font-size: 30px;
+      font-size: 30px;
    }
 
 
    .proyectos h2,
    .proceso h2,
    .contacto h2 {
-       font-size: 36px;
+      font-size: 36px;
    }
 
 
    .pasos {
-       grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
    }
 
 
    .contacto-enlaces {
-       width: 100%;
+      width: 100%;
    }
 
 
    .footer .contenedor {
-       flex-direction: column;
-       align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
    }
 }
 
@@ -613,19 +619,19 @@ img {
 
 
    .presentacion-contenido {
-       flex-direction: column;
+      flex-direction: column;
    }
 
 
    .presentacion-texto,
    .imagen-sobre-mi {
-       width: 100%;
+      width: 100%;
    }
 
 
    .formacion .contenedor,
    .conocimientos .contenedor {
-       grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
    }
 }
 
@@ -645,62 +651,385 @@ img {
 
 
 
-/* ==========================
-   DETALLE DEL PROYECTO B600
-   ========================== */
+/* DETALLE DEL PROYECTO B600 */
 
-/* Espaciado general de la sección */
-.detalle-proyecto {
-    padding: 80px 0;
+
+/* Fondo y texto de la página B600 */
+.pagina-b600 {
+   background-color: var(--blanco);
+   color: var(--oscuro);
 }
 
-/* Título principal */
-.detalle-proyecto h1 {
-    margin: 30px 0 20px;
+
+/* Título y descripción en dos columnas */
+.detalle-presentacion {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   align-items: center;
 }
 
-/* Subtítulo */
-.detalle-proyecto h2 {
-    margin: 40px 0 20px;
-}
-
-/* Párrafos */
-.detalle-proyecto p {
-    max-width: 800px;
+/* Descripción de B600 */
+.pagina-b600 .detalle-presentacion p {
+    max-width: 380px;
+    font-size: 14px;
     line-height: 1.6;
 }
 
-/* Enlace para volver a proyectos */
-.detalle-proyecto .enlace {
-    display: inline-block;
-    margin-top: 40px;
+/* Datos del proyecto B600 en tres columnas */
+.detalle-datos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+   margin: 50px 0 60px;
+}
+
+/* Marco de la imagen principal */
+.detalle-imagen {
+    padding: 1px;
+    border: 1px solid #D0D0D0;
+}
+
+/* Imagen principal del proyecto B600 */
+.detalle-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+/* Texto de los datos del proyecto */
+.detalle-datos p {
+   font-size: 12px;
+}
+
+/* Etiquetas de cada dato */
+.detalle-datos .etiqueta {
+   font-size: 10px;
+   margin-bottom: 10px;
 }
 
 
-/* Bloques de información del proyecto */
-.detalle-informacion {
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
+
+
+/* Objetivo: etiqueta a la izquierda y contenido a la derecha */
+.b600-objetivo {
+   display: grid;
+   grid-template-columns: 30% 1fr;
+   column-gap: 40px;
+   margin-top: 100px;
 }
 
-/* Distribución del espacio entre los bloques */
-.detalle-bloque {
-    flex: 1;
-    min-width: 0;
+/* Etiqueta del objetivo */
+.b600-objetivo .etiqueta {
+   grid-row: 1 / 3;
 }
 
-/* Títulos de los bloques */
-.detalle-bloque h2 {
-    margin-top: 0;
+
+/* Título del objetivo */
+.b600-objetivo h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 20px;
 }
 
-/* Adaptación de los bloques para móvil */
-@media (max-width: 768px) {
 
-    .detalle-informacion {
-        flex-direction: column;
-        gap: 24px;
+
+/* Párrafo del objetivo */
+.b600-objetivo>p:not(.etiqueta) {
+   grid-column: 2;
+}
+
+/* Proceso B600: etiqueta izquierda y etapas derecha */
+.b600-proceso {
+   display: grid;
+   grid-template-columns: 30% 1fr;
+   gap: 40px;
+   margin-top: 100px;
+}
+
+/* Etiqueta CÓMO LO HICE */
+.b600-proceso .etiqueta {
+   margin: 0;
+}
+
+
+/* Resultado: etiqueta izquierda y contenido derecha */
+.b600-resultado {
+   display: grid;
+   grid-template-columns: 30% 1fr;
+   column-gap: 40px;
+   margin-top: 100px;
+}
+
+/* Etiqueta RESULTADO */
+.b600-resultado .etiqueta {
+   grid-row: 1 / 3;
+}
+
+/* Título del resultado */
+.b600-resultado h2 {
+   margin: 0 0 20px;
+}
+
+/* Texto del resultado */
+.b600-resultado>p:not(.etiqueta) {
+   grid-column: 2;
+}
+
+
+/* Espacio antes de la imagen del resultado */
+.b600-imagen-resultado {
+   margin-top: 60px;
+}
+
+
+/* Imagen del resultado de B600 */
+.b600-imagen-resultado img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Espaciado general de la sección */
+.detalle-proyecto {
+   padding: 80px 0;
+}
+
+
+/* Título principal de B600 */
+.pagina-b600 .detalle-proyecto h1 {
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin: 0;
+}
+
+
+
+/* Párrafos */
+.detalle-proyecto p {
+   max-width: 800px;
+   line-height: 1.6;
+}
+
+
+/* Espacio del enlace Volver a proyectos */
+.volver-proyectos {
+   padding: 40px 0;
+}
+
+
+/* Subrayado del enlace Volver a proyectos */
+.volver-proyectos .enlace {
+   display: inline-block;
+   border-bottom: 1px solid var(--oscuro);
+   padding-bottom: 8px;
+}
+
+
+
+
+
+
+/* Distribución de las tres etapas de B600 */
+.detalle-pasos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+   margin-top: 0px;
+}
+
+/* Espacio superior de cada etapa */
+.detalle-paso {
+   padding-top: 20px;
+}
+
+
+/* Números de las etapas de B600 */
+.detalle-paso span {
+   display: block;
+   font-size: 12px;
+   color: var(--gris);
+   margin-bottom: 35px;
+}
+
+
+/* Sección del siguiente proyecto */
+.siguiente-proyecto {
+   padding: 45px 0;
+   background-color: var(--oscuro);
+   color: var(--blanco);
+}
+
+/* Etiqueta del siguiente proyecto */
+.siguiente-enlace span {
+   font-size: 12px;
+   color: var(--gris-claro);
+}
+
+/* Título del siguiente proyecto */
+.siguiente-enlace h2 {
+   font-size:28px;
+   font-weight: 500;
+   margin: 15px 0 0;
+}
+
+/* Espaciado de B600 en móvil */
+.detalle-proyecto {
+    padding: 50px 0;
+}
+
+.b600-objetivo,
+.b600-proceso,
+.b600-resultado {
+    margin-top: 60px;
+}
+
+
+/* Adaptación de B600 para móvil */
+@media (max-width: 600px) {
+
+    /* Presentación */
+    .detalle-presentacion {
+        grid-template-columns: 1fr;
     }
 
+    /* Título principal de B600 en móvil */
+.pagina-b600 .detalle-proyecto h1 {
+    font-size: 40px;
+}
+
+    /* Datos del proyecto */
+    .detalle-datos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Objetivo y Resultado */
+    .b600-objetivo,
+    .b600-resultado {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .b600-objetivo .etiqueta,
+    .b600-resultado .etiqueta {
+        grid-row: auto;
+    }
+
+    .b600-objetivo > p:not(.etiqueta),
+    .b600-resultado > p:not(.etiqueta) {
+        grid-column: auto;
+    }
+
+    /* Cómo lo hice */
+    .b600-proceso {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Tres etapas en vertical */
+    .detalle-pasos {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+
+/* FIGURAS GEOMÉTRICAS - HABILIDADES
+*/
+
+/* Contenedor general de cada figura */
+.figura {
+   position: relative;
+   width: 140px;
+   height: 150px;
+   margin-top: 20px;
+}
+
+/* Círculos */
+.figura .circulo {
+   position: absolute;
+   width: 120px;
+   height: 120px;
+   border: 1px solid #777777;
+   border-radius: 50%;
+   top: 15px;
+   left: 10px;
+}
+
+/* Rombos */
+.figura .rombo {
+   position: absolute;
+   width: 85px;
+   height: 85px;
+   border: 1px solid #777777;
+   transform: rotate(45deg);
+   top: 32px;
+   left: 27px;
+}
+
+/* Líneas verticales */
+.figura .linea-vertical {
+   position: absolute;
+   width: 1px;
+   height: 150px;
+   background-color: #777777;
+   top: 0;
+   left: 70px;
+}
+
+/* FIGURA 02 - INTERPRETAR */
+
+.figura-interpretar .cuadrado-inclinado {
+   position: absolute;
+   width: 90px;
+   height: 90px;
+   border: 1px solid #777777;
+   transform: rotate(-15deg);
+   top: 30px;
+   left: 25px;
+}
+
+.figura-interpretar .linea-diagonal {
+   position: absolute;
+   width: 1px;
+   height: 150px;
+   background-color: #777777;
+   transform: rotate(30deg);
+   top: 0;
+   left: 70px;
+}
+
+/* FIGURA 03 - DAR FORMA */
+
+.figura-dar-forma .rombo-exterior {
+   position: absolute;
+   width: 110px;
+   height: 110px;
+   border: 1px solid #777777;
+   transform: rotate(45deg);
+   top: 20px;
+   left: 15px;
+}
+
+.figura-dar-forma .rombo-interior {
+   position: absolute;
+   width: 78px;
+   height: 78px;
+   border: 1px solid #777777;
+   transform: rotate(45deg);
+   top: 36px;
+   left: 31px;
+}
+
+/* FIGURA 04 - COMPROBAR */
+
+.figura-comprobar .linea-horizontal {
+   position: absolute;
+   width: 140px;
+   height: 1px;
+   background-color: #777777;
+   top: 75px;
+   left: 0;
 }
